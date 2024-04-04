@@ -86,9 +86,12 @@ TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/vintf/framework_matrix_sony.xml
 
+TARGET_USES_CUSTOM_C2_MANIFEST := true
+
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/vintf/manifest_kalama.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest_sony.xml
+    $(DEVICE_PATH)/configs/vintf/manifest_sony.xml \
+    $(DEVICE_PATH)/configs/vintf/c2_manifest_vendor.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += nosoftlockup
