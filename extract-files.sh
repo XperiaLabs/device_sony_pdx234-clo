@@ -64,6 +64,9 @@ function blob_fixup() {
         vendor/bin/slim_daemon)
             ${PATCHELF} --add-needed libc++_shared.so "${2}"
             ;;
+        vendor/etc/seccomp_policy/qwesd@2.0.policy)
+            echo "pipe2: 1" >> "${2}"
+            ;;
     esac
 }
 
