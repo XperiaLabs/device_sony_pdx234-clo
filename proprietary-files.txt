@@ -1014,6 +1014,7 @@ vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 -vendor/lib64/libvmmem.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so
 
 # Display (SDM)
 vendor/etc/clstc_config_library.xml
