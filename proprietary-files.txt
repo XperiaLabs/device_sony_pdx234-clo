@@ -164,9 +164,14 @@ vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libvui_dmgr.so
 vendor/lib64/libvui_dmgr_client.so
+vendor/lib64/libsndcardparser.so
+vendor/lib64/libtinycompress.so
+vendor/lib64/libvolumelistener.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
+vendor/lib64/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib64/sound_trigger.primary.kalama.so
 
 # Audio AGM
 vendor/bin/agmcap
@@ -178,6 +183,7 @@ vendor/lib64/libagm_mixer_plugin.so
 vendor/lib64/libagm_pcm_plugin.so
 vendor/lib64/libagmclient.so
 vendor/lib64/libagmmixer.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio FX modules
@@ -600,6 +606,7 @@ vendor/lib64/camera/libexcal_splitter_plugin.so
 vendor/lib64/camera/libexcal_stream_ctrl_plugin.so
 vendor/lib64/camx.device-impl.so
 vendor/lib64/camx.provider-impl.so
+vendor/lib64/android.hardware.light-V1-ndk_platform.so
 vendor/lib64/com.qti.camx.chiiqutils.so
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.feature2.afbrckt.so
@@ -676,6 +683,7 @@ vendor/lib64/libcommonchiutils.so
 vendor/lib64/libdepthcomputation.so
 vendor/lib64/libexcal_core.so
 vendor/lib64/libexcal_system.so
+vendor/lib64/libhfp_pal.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhdr_stub.so
 vendor/lib64/libipebpsstriping.so
@@ -902,6 +910,7 @@ vendor/etc/charger_fw_fstab.qti
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
+vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Connection Security
@@ -1393,6 +1402,9 @@ vendor/lib64/libqcodec2_streaminteg_filter.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libqconfigclient.so
+vendor/lib64/libqcompostprocbundle.so
+vendor/lib64/libqcomvisualizer.so
+vendor/lib64/libqcomvoiceprocessing.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
 
