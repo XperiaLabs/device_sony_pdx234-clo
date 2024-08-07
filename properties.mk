@@ -111,6 +111,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 media.settings.xml=/vendor/etc/media_profiles_kalama.xml
 
 PRODUCT_VENDOR_PROPERTIES += \
+debug.c2.use_dmabufheaps=1
 debug.stagefright.c2inputsurface=-1 \
 media.stagefright.enable-aac=true \
 media.stagefright.enable-fma2dp=true \
