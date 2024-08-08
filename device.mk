@@ -265,11 +265,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_vendor.xml
 
 PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
@@ -434,7 +432,7 @@ TARGET_SHIPS_XPERIA_SETTINGS_MENU := true
 TARGET_SUPPORTS_IMAGE_ENHANCEMENT := true
 TARGET_SUPPORTS_BATTERY_CARE := true
 TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
-TARGET_SUPPORTS_HIGH_POLLING_RATE := true
+TARGET_SUPPORTS_HIGH_POLLING_RATE := false
 TARGET_SUPPORTS_EUICC := true
 
 # Xperia Extras - Flags
