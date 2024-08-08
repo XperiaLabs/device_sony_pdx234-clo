@@ -425,9 +425,28 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl
 
-# Xperia Parts
-PRODUCT_PACKAGES += \
-    XperiaParts
+# Xperia Modules | Xperia Extras
+$(call inherit-product, hardware/sony/XperiaModules.mk)
+$(call inherit-product, vendor/sony/extra/Yodo/extra.mk)
+
+# Xperia Modules - Flags
+TARGET_SHIPS_XPERIA_SETTINGS_MENU := true
+TARGET_SUPPORTS_IMAGE_ENHANCEMENT := true
+TARGET_SUPPORTS_BATTERY_CARE := true
+TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
+TARGET_SUPPORTS_HIGH_POLLING_RATE := true
+TARGET_SUPPORTS_EUICC := true
+
+# Xperia Extras - Flags
+TARGET_SHIPS_SONY_FRAMEWORK := true
+TARGET_SHIPS_SONY_CAMERA := true
+TARGET_SHIPS_SONY_APPS := true
+TARGET_SUPPORTS_GAME_CONTROLLERS := true
+TARGET_SUPPORTS_XPERIA_STREAM := true
+
+# Xperia Modules | Xperia Extras - Shared Flags (hardware_sony & vendor_sony_extra)
+TARGET_SUPPORTS_SOUND_ENHANCEMENT_ADDON := true
+TARGET_SHIPS_SOUND_ENHANCEMENT := true
 
 # Xperia Modules
 include hardware/sony/XperiaModules.mk
