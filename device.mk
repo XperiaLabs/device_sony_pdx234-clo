@@ -16,6 +16,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/sony/pdx234/pdx234-vendor.mk)
 
+$(call inherit-product, device/sony/extra/extra.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -265,11 +267,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_vendor.xml
 
 PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
@@ -306,8 +306,6 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
     libcodec2_vndk \
-    android.hardware.media.c2@1.0.vendor \
-    android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor
 
 # Enable Codec 2.0
@@ -427,14 +425,14 @@ PRODUCT_PACKAGES += \
 
 # Xperia Modules | Xperia Extras
 $(call inherit-product, hardware/sony/XperiaModules.mk)
-$(call inherit-product, vendor/sony/extra/Yodo/extra.mk)
+#$(call inherit-product, vendor/sony/extra/Yodo/extra.mk)
 
 # Xperia Modules - Flags
 TARGET_SHIPS_XPERIA_SETTINGS_MENU := true
 TARGET_SUPPORTS_IMAGE_ENHANCEMENT := true
 TARGET_SUPPORTS_BATTERY_CARE := true
 TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
-TARGET_SUPPORTS_HIGH_POLLING_RATE := true
+TARGET_SUPPORTS_HIGH_POLLING_RATE := false
 TARGET_SUPPORTS_EUICC := true
 
 # Xperia Extras - Flags
@@ -445,8 +443,8 @@ TARGET_SUPPORTS_GAME_CONTROLLERS := true
 TARGET_SUPPORTS_XPERIA_STREAM := true
 
 # Xperia Modules | Xperia Extras - Shared Flags (hardware_sony & vendor_sony_extra)
-TARGET_SUPPORTS_SOUND_ENHANCEMENT_ADDON := true
-TARGET_SHIPS_SOUND_ENHANCEMENT := true
+TARGET_SUPPORTS_SOUND_ENHANCEMENT_ADDON := false
+TARGET_SHIPS_SOUND_ENHANCEMENT := false
 
 # Xperia Modules
 include hardware/sony/XperiaModules.mk
