@@ -77,7 +77,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     init \
     overlay \
     perf \
-    telephony \
     usb \
     wfd \
     wlan
