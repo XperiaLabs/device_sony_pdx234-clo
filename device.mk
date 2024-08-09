@@ -449,11 +449,3 @@ TARGET_SUPPORTS_XPERIA_STREAM := true
 # Xperia Modules | Xperia Extras - Shared Flags (hardware_sony & vendor_sony_extra)
 TARGET_SUPPORTS_SOUND_ENHANCEMENT_ADDON := true
 TARGET_SHIPS_SOUND_ENHANCEMENT := true
-
-# Xperia Modules
-include hardware/sony/XperiaModules.mk
-
-TARGET_SUPPORTS_CREATOR_MODE := true
-TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
-TARGET_SUPPORTS_BATTERY_CARE := true
-TARGET_SUPPORTS_EUICC := true
