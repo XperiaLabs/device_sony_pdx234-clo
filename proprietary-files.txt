@@ -1039,30 +1039,17 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/lib64/libdiag.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
-# Display - Gralloc
-vendor/lib64/libgralloc.qti.so
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
-
 # Display (HDR)
 vendor/etc/libhdr_somc.xml
 
 # Display (HWC)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/etc/snapdragon_color_libs_config.xml
 vendor/lib64/libdpps.so
-vendor/lib64/libhistogram.so
-vendor/lib64/libqdutils.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmdal.so
-vendor/lib64/libsdmutils.so
 -vendor/lib64/libvmmem.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so
 
 # Display (SDM)
 vendor/etc/clstc_config_library.xml
-vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/displayconfig/display_id_131.xml
 
 # Display (Sony)
