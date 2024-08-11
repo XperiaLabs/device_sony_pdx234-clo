@@ -1327,10 +1327,6 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.1.so
 
-# Kernel
-vendor/bin/system_dlkm_modprobe.sh
-vendor/bin/vendor_modprobe.sh
-
 # Keymaster
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
@@ -1499,7 +1495,6 @@ vendor/lib64/vendor.qti.qesdsys-V3-ndk.so
 # QMI
 system/etc/permissions/privapp-permissions-qti.xml
 system/etc/sysconfig/qti_whitelist.xml
-vendor/bin/init.qti.write.sh
 vendor/bin/irsc_util
 vendor/bin/qmipriod
 vendor/bin/qrtr-cfg
@@ -2058,6 +2053,3 @@ vendor/firmware/cs40l25a_cal.wmfw
 
 # Touchscreen firmware
 vendor/firmware/touch_module_id_0x01.img
-
-# Wifi firmware
-vendor/etc/wifi/wpa_supplicant.conf
