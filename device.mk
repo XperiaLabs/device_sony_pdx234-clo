@@ -99,7 +99,16 @@ SOONG_CONFIG_android_hardware_audio += \
 SOONG_CONFIG_android_hardware_audio_run_64bit := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-V2-ndk.vendor
+    android.hardware.bluetooth.audio-V2-ndk.vendor \
+    android.hardware.audio@7.1-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    audio.bluetooth.default \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin
 
 # Audio Policies
 PRODUCT_COPY_FILES += \
@@ -299,6 +308,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
     libcodec2_hidl@1.2.vendor \
     libsfplugin_ccodec_utils.vendor \
+    libcodec2_vndk.vendor \
     libcodec2_soft_common.vendor
 
 # Exclude AudioFX
